@@ -1,0 +1,25 @@
+﻿<Window x:Class="Viewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Viewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="477" Width="664">
+    <Grid HorizontalAlignment="Left" Width="654" Margin="0,0,0,-66">
+        <Label Content="文件" HorizontalAlignment="Left" Margin="40,21,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFileName" HorizontalAlignment="Left" Height="23" Margin="105,21,0,0" TextWrapping="Wrap" Text="C:\Users\ives\Desktop\【PDF】20190615.pdf" VerticalAlignment="Top" Width="330" IsEnabled="False"/>
+        <Button x:Name="btnOpenFile"  Content="..." HorizontalAlignment="Left" Margin="455,21,0,0" VerticalAlignment="Top" Width="55" Click="btnOpenFile_Click"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="270" Margin="70,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="425"/>
+        <Button x:Name="btnParse" Content="解析所有文本" HorizontalAlignment="Left" Margin="540,49,0,0" VerticalAlignment="Top" Width="85" Click="btnParse_Click"/>
+        <Label Content="页码" HorizontalAlignment="Left" Margin="40,49,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPage" HorizontalAlignment="Left" Height="23" Margin="105,49,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="330"/>
+        <Button x:Name="btnSavePageImage" Click="btnSavePageImage_Click" Content="保存图片" HorizontalAlignment="Left" Margin="455,83,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button x:Name="btnSaveAllImage" Click="btnSaveAllImage_Click" Content="保存全部图片" HorizontalAlignment="Left" Margin="531,81,0,0" Width="83" Height="19" VerticalAlignment="Top"/>
+        <Button x:Name="btnPageText" Click="btnPageText_Click" Content="解析此页文本" HorizontalAlignment="Left" Margin="455,49,0,0" VerticalAlignment="Top" Width="76" Height="21"/>
+        <Label Content="图片保存路径" HorizontalAlignment="Left" Margin="23,78,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtImageSavePath"  HorizontalAlignment="Left" Height="23" Margin="105,82,0,0" TextWrapping="Wrap" Text="C:\Users\ives\Desktop\image" VerticalAlignment="Top" Width="270"/>
+        <Button x:Name="btnImagePath" Click="btnImagePath_Click" Content="..." HorizontalAlignment="Left" Margin="390,82,0,0" VerticalAlignment="Top" Width="45" Height="21"/>
+
+    </Grid>
+</Window>
